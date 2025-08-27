@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="rediseño web" />
+        <meta name="author" content="Nicole Zapata" />
+        <title>Rediseño Web_Nomada studio_</title>
+        <!-- link css personalizado -->
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="Media/Logos/logo (1).png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+<header class="main-header transparent">
+    <div class="menu-container">
+      <!-- Grupo principal (logo y enlaces) -->
+      <div id="grupo-menu1">
+        <div class="logo">
+          <img src="Media/Logos/logo (2).png" alt="Nomada Studio Logo">
+        </div>
+        <nav class="menu" aria-label="Menú principal">
+          <a href="index.html" class="activo" >Inicio</a>
+          <a href="Juegos.html">Juegos</a>
+          <a href="Tienda.html" >Tienda</a>
+        </nav>
+      </div>
+
+      <!-- Botón de idioma -->
+      <div class="boton-idiomas">
+        <a id="btn-idioma" role="button" aria-haspopup="true" aria-expanded="false">▾ ES</a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <div class="hamburguesa" id="btn-hamburguesa">
+        <p>☰</p>
+      </div>
+    </div>
+
+    <!-- Menú lateral hamburguesa -->
+    <div id="menu-desplegable" class="menu-desplegable">
+      <div class="boton-salir btn-salir salir-izquierda">
+        <span><img src="Media/Iconos/boton salir.svg"></span>
+      </div>
+      <div class="logo">
+        <img src="Media/Logos/logo (2).png" alt="Nomada Studio Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Juegos.html">Juegos</a></li>
+        <li><a href="Tienda.html">Tienda</a></li>
+      </ul>
+    </div>
+
+    <!-- Menú lateral idiomas -->
+    <div id="menu-idiomas" class="menu-idiomas">
+      <div class="boton-salir btn-salir salir-derecha">
+        <span><img src="Media/Iconos/boton salir.svg"></span>
+      </div>
+      <ul>
+        <h1>Idioma a elegir</h1>
+        <li><a href="Error 404.html">CAT ></a></li>
+        <li><a href="Error 404.html">EN ></a></li>
+      </ul>
+    </div>
+
+    <!-- Fondo de overlay -->
+    <div id="overlay" class="overlay"></div>
+  </header>
+
+
+
+<!--------------- hero video presentación ------------- -->
+
+<section class="hero-video">
+  <!-- Video solo escritorio -->
+  <video class="desktop-video" autoplay muted loop playsinline>
+    <source src="Media/video-promo-web.mp4" type="video/mp4">
+  </video>
+
+  <!-- Intro móvil y tablet -->
+  <div class="responsive-intro">
+    <h1 class="intro-text" id="step1">Bienvenido</h1>
+    <h1 class="intro-text" id="step2">a</h1>
+    <div class="intro-logo" id="step3">
+      <img src="Media/Logos/logo 4.png" alt="Nomada Studio Logo">
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 sobre-nosotros"> 
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LOGO DESKTOP -->
+      <div class="col-md-6 logo-desktop">
+        <img src="Media/Logos/logo (1).png" alt="Logo Desktop" class="img-fluid">
+      </div>
+
+      <!-- TEXTO -->
+      <div class="col-md-6 about-text">
+        <h2 class="fw-bold text-uppercase">Sobre Nosotros</h2>
+        <h5 class="text-muted mb-3">Nuestra Historia</h5>
+        <p>
+          <strong>Nomada Studio</strong> nació con la visión de crear experiencias visuales únicas. Desde nuestros inicios, hemos trabajado en la intersección del arte y la tecnología, desarrollando proyectos innovadores que inspiran y conectan con la audiencia.
+        </p>
+        <p>
+          Creemos en el diseño minimalista, la armonía visual y la funcionalidad. Cada proyecto refleja nuestra pasión por la estética y la atención al detalle, asegurando que cada pieza cuente una historia poderosa.
+        </p>        
+        <p class="fw-bold mb-0">¿Quieres trabajar con nosotros?</p>
+
+       <div class="mt-3">
+          <button class="btn-red small mt-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#contactModal"> Ver más &gt;
+           </button>
+        </div>
+      </div>
+
+      <!-- LOGO MOBILE -->
+      <div class="col-md-6 logo-mobile">
+        <img src="Media/Logos/logo (1).png" alt="Logo Mobile" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- MODAL de contactos -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body p-0 d-flex flex-column flex-md-row">
+
+        <!-- Imagen a la izquierda (oculta en móviles) -->
+        <div class="left-panel d-none d-md-block">
+          <img src="Media/Img-decoración/Deco-img-contactos.png" alt="Imagen decorativa" class="img-fluid img-left">
+        </div>
+
+        <!-- Formulario a la derecha -->
+        <div class="right-panel position-relative">
+          <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Cerrar">&times;</button>
+          <h2 class="fw-bold">Contáctanos</h2>
+          <p>Conecta con nosotros</p>
+
+          <!-- ⬇️ IMPORTANTE: id del formulario -->
+          <form id="contactForm" novalidate>
+            <div class="row g-2">
+              <div class="col-md-6">
+                <label class="form-label" for="contactNombre">Nombre</label>
+                <input type="text" class="form-control" id="contactNombre" placeholder="Escribe tu nombre">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="contactApellido">Apellido</label>
+                <input type="text" class="form-control" id="contactApellido" placeholder="Escribe tu apellido">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="contactEmail">E-mail</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Escribe tu e-mail">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="contactAsunto">Asunto</label>
+                <input type="text" class="form-control" id="contactAsunto" placeholder="Escribe el asunto">
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <label class="form-label" for="contactMensaje">Mensaje</label>
+              <textarea class="form-control" id="contactMensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" id="acepto1">
+              <label class="form-check-label" for="acepto1">
+                Acepto el uso de mis datos para responder este mensaje.
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="acepto2">
+              <label class="form-check-label" for="acepto2">
+                Consiento el tratamiento de mis datos según la política de privacidad.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-light mt-3 rounded-pill">Enviar ></button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!------------- Botones en desktop filtraje ------------->
+  <section id="comunidad-activa" class="container my-5">
+  <h1 class="mb-4">Comunidad Activa</h1>
+ <div class="filter-wrapper">
+  <!-- Botones de filtros para desktop -->
+  
+  <div class="filter-buttons d-none d-md-flex my-4 justify-content-start">
+    <div class="grupo2 d-flex justify-content-start">
+  <a href="#" class="btn-filter active" data-filter="all">General</a>
+  <a href="#" class="btn-filter" data-filter="noticias">Anuncios</a>
+  <a href="#" class="btn-filter" data-filter="videos">Foros</a>
+</div>
+
+  </div>
+
+  <!-- Dropdown visible solo en mobile -->
+<div class="filter-dropdown d-md-none mt-2 mb-3">
+  <select class="form-select btn-filter-dropdown" aria-label="Filtro móvil">
+    <option value="all" selected>General</option>
+    <option value="noticias">Anuncios</option>
+    <option value="videos">Foros</option>
+  </select>
+</div>
+
+
+
+<div class="row g-4 align-items-stretch">
+  
+  <!-- Card principal general  -->
+<div class="col-md-6 card-item" data-category="all" data-role="main">
+  <div class="card border-0 h-100">
+    <div class="img-frame">
+      <img src="Media/Img-decoración/img principal 1.png" class="card-img-top" alt="Final de Gris">
+      <!-- Overlay solo para móvil -->
+      <div class="img-overlay">
+        <button data-bs-toggle="modal" data-bs-target="#modalProximamente">Ver más</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Final de Gris</h5>
+      <p class="card-text small text-muted">Un impacto duradero</p>
+      <p class="card-text small">
+        El final de Gris es una experiencia profundamente emocional, donde los colores y la música se fusionan para representar la superación del dolor...
+      </p>
+      <button class="btn-red small" data-bs-toggle="modal" data-bs-target="#modalProximamente">
+        Ver más &gt;
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Card principal (oculta) anuncios-->
+<div class="col-md-6 card-item" data-category="noticias" data-role="main">
+  <div class="card border-0 h-100">
+    <div class="img-frame">
+      <img src="Media/Img-decoración/img principal 2.png" class="card-img-top" alt="Anuncio">
+      <!-- Overlay solo para móvil -->
+      <div class="img-overlay">
+        <!-- 🔹 Enlazamos ahora al modal exclusivo -->
+        <button data-bs-toggle="modal" data-bs-target="#modalAnuncio">Ver más</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Nuevo trailer Neva</h5>
+      <p class="card-text small text-muted">Novedad del momento</p>
+      <p class="card-text small">
+        El final de Gris es una experiencia profundamente emocional, donde los colores y la música se fusionan para representar la superación del dolor...
+      </p>
+      <button class="btn-red small" data-bs-toggle="modal" data-bs-target="#modalAnuncio">
+        Ver más &gt;
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Card principal foros-->
+<div class="col-md-6 card-item" data-category="videos" data-role="main">
+  <div class="card border-0 h-100">
+    <div class="img-frame">
+      <img src="Media/Img-decoración/img principal 1.png" class="card-img-top" alt="Foros">
+      <!-- Overlay solo para móvil -->
+      <div class="img-overlay">
+        <button data-bs-toggle="modal" data-bs-target="#modalProximamente">Ver más</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Final de Gris</h5>
+      <p class="card-text small text-muted">Un impacto duradero</p>
+      <p class="card-text small">
+        El final de Gris es una experiencia profundamente emocional, donde los colores y la música se fusionan para representar la superación del dolor...
+      </p>
+      <button class="btn-red small" data-bs-toggle="modal" data-bs-target="#modalProximamente">
+        Ver más &gt;
+      </button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Columna derecha (Cards secundarias en grid 2x2) -->
+  <div class="col-md-6">
+    <div class="row g-3">
+      
+      <!-- Secundaria 1 -->
+      <div class="col-12 col-sm-6 card-item" data-category="noticias" data-role="secondary">
+      <div class="card border-0 h-100">
+       <div class="img-frame">
+        <img src="Media/Img-decoración/img web 4.png" class="card-img-top" alt="Descuento en Gris">
+        <div class="img-overlay">
+        <!-- 🔹 Aquí cambiamos el target -->
+        <button data-bs-toggle="modal" data-bs-target="#modalSec1">Ver más</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h6 class="card-title mb-1 fw-bold small">Gris en oferta</h6>
+      <p class="card-text small text-muted">¡Por tiempo limitado!</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Secundaria 2 -->
+<div class="col-12 col-sm-6 card-item" data-category="videos" data-role="secondary">
+  <div class="card border-0 h-100">
+    <div class="img-frame">
+      <img src="Media/Img-decoración/img web 1.png" class="card-img-top" alt="Símbolos en Neva">
+      <div class="img-overlay">
+        <!-- 🔹 Cambié el target a #modalSec2 -->
+        <button data-bs-toggle="modal" data-bs-target="#modalSec2">Ver más</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h6 class="card-title mb-1 fw-bold small">Símbolos en Neva</h6>
+      <p class="card-text small text-muted">Hablemos de su mensaje.</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Secundaria 3 -->
+<div class="col-12 col-sm-6 card-item" data-category="videos" data-role="secondary">
+  <div class="card border-0 h-100">
+    <div class="img-frame">
+      <img src="Media/Img-decoración/img web 3.png" class="card-img-top" alt="Teorías de Gris">
+      <div class="img-overlay">
+        <!-- 🔹 Ahora enlaza con modalSec3 -->
+        <button data-bs-toggle="modal" data-bs-target="#modalSec3">Ver más</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h6 class="card-title mb-1 fw-bold small">Teorías de Gris</h6>
+      <p class="card-text small text-muted">Descubre los secretos</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Secundaria 4 -->
+<div class="col-12 col-sm-6 card-item" data-category="noticias" data-role="secondary">
+  <div class="card border-0 h-100">
+    <div class="img-frame">
+      <img src="Media/Img-decoración/img web 2.png" class="card-img-top" alt="Neva en preventa">
+      <div class="img-overlay">
+        <!-- 🔹 Ahora enlaza con modalSec4 -->
+        <button data-bs-toggle="modal" data-bs-target="#modalSec4">Ver más</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h6 class="card-title mb-1 fw-bold small">Neva en preventa</h6>
+      <p class="card-text small text-muted">Reserva ahora</p>
+    </div>
+  </div>
+</div>
+
+
+<!-----------------------MODAL CARD PRINCIPALES----------------------->
+
+  
+<!-- Modal principal -->
+<div class="modal fade" id="modalProximamente" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered"> <!-- Cambié modal-lg por modal-xl -->
+    <div class="modal-content bg-dark text-white rounded-4 position-relative modal-wide"> <!-- Agregué modal-wide -->
+
+      <!-- Botón de cerrar con X en esquina superior derecha -->
+      <button type="button" 
+        class="btn-close btn-close-white position-absolute top-0 end-0 m-2 m-md-3 px-4" 
+        data-bs-dismiss="modal" aria-label="Cerrar" style="z-index: 10;">
+      </button>
+
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+
+          <!-- Columna izquierda: Imagen + título -->
+          <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+           <img src="Media/Img-decoración/img principal 1.png" class="img-fluid rounded-3 mb-3" alt="Juego Gris">
+          <h3 class="fw-bold">Teorías de Gris</h3>
+        <p class="text-muted">Descubre los secretos ocultos</p>
+        </div>
+
+
+          <!-- Columna derecha: Texto explicativo -->
+          <div class="col-12 col-lg-7 px-4">
+            <!-- Encabezado con icono, categoría y fecha -->
+            <div class="d-flex align-items-start mb-2">
+              <i class="bi bi-chat-dots px-2" style="font-size: 28px;"></i>
+              <div>
+                <span class="fw-bold">Foros</span><br>
+                <small class="text-muted">Publicado el 24 de Marzo, 2025</small>
+              </div>
+            </div>
+            <hr class="border-light opacity-50">
+
+            <!-- Bloque 1 -->
+            <h4 class="fw-bold">El significado del viaje</h4>
+            <div class="d-block d-lg-none">
+              <!-- Texto visible por defecto -->
+          <p>Muchos jugadores creen que Gris representa 
+          las cinco etapas del duelo, con cada fase reflejando una emoción específica: negación, ira, negociación, 
+          depresión y aceptación...
+          </p>
+
+      <!-- Texto extra oculto -->
+        <div class="collapse" id="textoGris1">
+            <p>
+            La ausencia de color al inicio sugiere la pérdida de esperanza, mientras que 
+             el regreso progresivo de los colores simboliza la recuperación emocional.
+          </p>
+      </div>
+
+<!-- Botón toggle -->
+      <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+          data-bs-toggle="collapse" href="#textoGris1" 
+          role="button" aria-expanded="false" aria-controls="textoGris1"
+          onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+          < Ver más >
+          </a>
+
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                Muchos jugadores creen que Gris representa las cinco etapas del duelo, 
+                con cada fase reflejando una emoción específica: negación, ira, negociación, 
+                depresión y aceptación.
+              </p>
+              <p>
+                La ausencia de color al inicio sugiere la pérdida de esperanza, mientras que 
+                el regreso progresivo de los colores simboliza la recuperación emocional.
+              </p>
+            </div>
+
+          <!-- Bloque 2 -->
+          <h4 class="fw-bold mt-4">Simbolismo en los escenarios</h4>
+          <div class="d-block d-lg-none">
+
+          <!-- Texto visible por defecto -->
+            <p>
+               Cada entorno del juego parece tener un mensaje oculto...
+            </p>
+
+  <!-- Texto extra oculto -->
+          <div class="collapse" id="textoGris2">
+            <p>
+            La ausencia de color al inicio sugiere la pérdida de esperanza, mientras que el regreso progresivo de los colores puede interpretarse como una metáfora de la recuperación emocional.
+            </p>
+          </div>
+
+   <!-- Botón toggle -->
+        <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+             data-bs-toggle="collapse" href="#textoGris2" 
+          role="button" aria-expanded="false" aria-controls="textoGris2"
+          onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+          < Ver más >
+        </a>
+      </div>
+
+      <div class="d-none d-lg-block small">
+              <p>
+                Cada entorno del juego parece tener un mensaje oculto.  
+                La ausencia de color al inicio sugiere la pérdida de esperanza, mientras que 
+                el regreso progresivo de los colores puede interpretarse como una metáfora 
+                de la recuperación emocional.
+              </p>
+            </div>
+
+            <a href="Juegos.html" target="_blank" 
+                class="btn btn-outline-light rounded-pill px-4 mt-4 mt-lg-3">
+              Juega Ahora &gt;
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 🔸 Modal exclusivo para ANUNCIO -->
+<div class="modal fade" id="modalAnuncio" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white rounded-4 position-relative modal-wide">
+
+      <!-- Botón cerrar -->
+      <button type="button" 
+        class="btn-close btn-close-white position-absolute top-0 end-0 m-2 m-md-3 px-4" 
+        data-bs-dismiss="modal" aria-label="Cerrar" style="z-index: 10;">
+      </button>
+
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+
+          <!-- Columna izquierda -->
+          <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+            <img src="Media/Img-decoración/img principal 2.png" class="img-fluid rounded-3 mb-3" alt="Nuevo tráiler Neva">
+            <h3 class="fw-bold">Nuevo tráiler Neva</h3>
+            <p class="text-muted">Novedad del momento</p>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="col-12 col-lg-7 px-4">
+            <!-- Encabezado -->
+            <div class="d-flex align-items-start mb-2">
+              <i class="bi bi-megaphone me-2 px-2" style="font-size: 28px;"></i>
+              <div>
+                <span class="fw-bold">Anuncios</span><br>
+                <small class="text-muted">Publicado el 22 de agosto, 2025</small>
+              </div>
+            </div>
+            <hr class="border-light opacity-50">
+
+            <!-- Bloque 1 -->
+            <h4 class="fw-bold"> Un vistazo a lo que viene</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                El nuevo tráiler de Neva ha dejado a los fans con ganas de más...
+              </p>
+
+              <div class="collapse" id="textoNeva1">
+                <p>
+                  En el video, se pueden apreciar nuevos entornos, personajes y mecánicas que elevan la experiencia de juego.  
+                  La paleta de colores y el diseño artístico siguen la línea de Gris, pero con un toque aún más maduro y oscuro.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoNeva1" 
+                role="button" aria-expanded="false" aria-controls="textoNeva1"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                El nuevo tráiler de Neva ha dejado a los fans con ganas de más.  
+                En el video, se pueden apreciar nuevos entornos, personajes y mecánicas que elevan la experiencia de juego.  
+                La paleta de colores y el diseño artístico siguen la línea de Gris, pero con un toque aún más maduro y oscuro.
+              </p>
+            </div>
+
+            <!-- Bloque 2 -->
+            <h4 class="fw-bold mt-4"> Una historia profundamente emocional</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                Vemos momentos de exploración y desafíos que sugieren una trama cargada de emociones...
+              </p>
+
+              <div class="collapse" id="textoNeva2">
+                <p>
+                  El protagonista establece una conexión única con su entorno.  
+                  Cada detalle del tráiler sugiere que la historia se enfocará en el crecimiento personal y la relación con la naturaleza.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoNeva2" 
+                role="button" aria-expanded="false" aria-controls="textoNeva2"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                Vemos momentos de exploración y desafíos que sugieren una trama cargada de emociones.  
+                El protagonista establece una conexión única con su entorno, lo que anticipa una historia intensamente personal.
+              </p>
+            </div>
+
+            <!-- Botón -->
+            <a href="Juegos.html" target="_blank" 
+              class="btn btn-outline-light rounded-pill px-4 mt-4 mt-lg-3">
+              Ver tráiler &gt;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!------------------ modal para cards segunrias-------------------->
+
+
+<!-- 🔸 Modal 1 -->
+<div class="modal fade" id="modalSec1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white rounded-4 position-relative modal-wide">
+
+      <!-- Botón de cerrar -->
+      <button type="button" 
+        class="btn-close btn-close-white position-absolute top-0 end-0 m-2 m-md-3" 
+        data-bs-dismiss="modal" aria-label="Cerrar"
+        style="z-index: 1056;"></button>
+
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+
+          <!-- Izquierda -->
+          <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+            <img src="Media/Img-decoración/img web 4.png" class="img-fluid rounded-3 mb-3" alt="Gris en oferta">
+            <h3 class="fw-bold">Gris en oferta</h3>
+            <p class="text-muted">¡Por tiempo limitado!</p>
+          </div>
+
+          <!-- Derecha -->
+          <div class="col-12 col-lg-7 px-4">
+            <!-- Encabezado -->
+            <div class="d-flex align-items-start mb-2">
+              <i class="bi bi-megaphone me-2 px-2" style="font-size: 28px;"></i>
+              <div>
+                <span class="fw-bold">Noticias</span><br>
+                <small class="text-muted">Publicado el 22 de Agosto, 2025</small>
+              </div>
+            </div>
+            <hr class="border-light opacity-50">
+
+            <!-- Bloque 1 -->
+            <h4 class="fw-bold">Un viaje visual a menor precio</h4>
+            <div class="d-block d-lg-none">
+              <!-- Texto corto -->
+              <p>Si aún no has experimentado Gris, esta es tu oportunidad...</p>
+
+              <!-- Texto extra oculto -->
+              <div class="collapse" id="textoSec1">
+                <p>
+                  El juego, conocido por su arte en acuarela y su emotiva narrativa, está disponible a un precio reducido por tiempo limitado.  
+                  La experiencia de Gris va más allá de un simple videojuego: cada escenario transmite emociones sin necesidad de diálogos, ofreciendo un viaje introspectivo ideal para quienes buscan algo más que acción.
+                </p>
+              </div>
+
+              <!-- Botón toggle -->
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoSec1" 
+                role="button" aria-expanded="false" aria-controls="textoSec1"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <!-- Texto completo escritorio -->
+            <div class="d-none d-lg-block small">
+              <p>
+                Si aún no has experimentado Gris, esta es tu oportunidad.  
+                Conocido por su arte en acuarela y su emotiva narrativa, está disponible a un precio reducido por tiempo limitado.  
+                Cada escenario ha sido diseñado con un nivel de detalle impresionante, logrando transmitir emociones sin necesidad de diálogos.
+              </p>
+              <p>
+                Los jugadores describen la aventura como un viaje introspectivo, ideal para quienes buscan algo más que acción.
+              </p>
+            </div>
+
+            <!-- Botón acción -->
+            <a href="https://www.xbox.com/es-ES/games/store/gris/9nhhp2h0zp98" target="_blank" 
+              class="btn btn-outline-light rounded-pill px-4 mt-4 mt-lg-3">
+              Comprar ahora &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 🔸 Modal 2 -->
+<div class="modal fade" id="modalSec2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white rounded-4 position-relative modal-wide">
+
+       <button type="button" 
+        class="btn-close btn-close-white position-absolute top-0 end-0 m-2 m-md-3" 
+        data-bs-dismiss="modal" aria-label="Cerrar"
+        style="z-index: 1056;"></button>
+
+
+       <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+
+           <!-- Columna izquierda -->
+          <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+            <img src="Media/Img-decoración/img web 1.png" class="img-fluid rounded-3 mb-3" alt="Símbolos de Neva">
+            <h3 class="fw-bold">Símbolos de Neva</h3>
+            <p class="text-muted">Hablemos de su mensaje</p>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="col-12 col-lg-7 px-4">
+            <div class="d-flex align-items-start mb-2">
+              <i class="bi bi-chat-dots px-2" style="font-size: 28px;"></i>
+              <div>
+                <span class="fw-bold">Foros</span><br>
+                <small class="text-muted">Publicado el 14 de Diciembre, 2025</small>
+              </div>
+            </div>
+            <hr class="border-light opacity-50">
+
+            <!-- Bloque 1 -->
+            <h4 class="fw-bold">Un lenguaje visual poderoso</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                Al igual que en Gris, Neva emplea símbolos para narrar su historia sin necesidad de palabras...
+              </p>
+
+              <div class="collapse" id="textoNevaSimbolos1">
+                <p>
+                  Los colores, formas y composiciones visuales transmiten emociones y mensajes profundos, invitando al jugador a interpretar cada escena.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoNevaSimbolos1" 
+                role="button" aria-expanded="false" aria-controls="textoNevaSimbolos1"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                Al igual que en Gris, Neva emplea símbolos para narrar su historia sin necesidad de palabras.  
+                Los colores, formas y composiciones visuales transmiten emociones y mensajes profundos, invitando al jugador a interpretar cada escena.
+              </p>
+            </div>
+
+            <!-- Bloque 2 -->
+            <h4 class="fw-bold mt-4"> La naturaleza como reflejo de la protagonista</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                A lo largo del juego, la naturaleza reacciona a las acciones y emociones de Alba...
+              </p>
+
+              <div class="collapse" id="textoNevaSimbolos2">
+                <p>
+                  Los cambios en el paisaje y las criaturas que encuentra en su camino simbolizan su lucha interna, convirtiéndose en una herramienta narrativa clave.  
+                  Cada elemento en Neva tiene un propósito, desde la iluminación hasta los detalles en el fondo.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoNevaSimbolos2" 
+                role="button" aria-expanded="false" aria-controls="textoNevaSimbolos2"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                A lo largo del juego, la naturaleza reacciona a las acciones y emociones de Alba.  
+                Los cambios en el paisaje y las criaturas que encuentra en su camino simbolizan su lucha interna, convirtiéndose en una herramienta narrativa clave.  
+                Cada elemento en Neva tiene un propósito, desde la iluminación hasta los detalles en el fondo.
+              </p>
+            </div>
+
+            <!-- Botón acción -->
+            <a href="Error 404.html" target="_blank" 
+               class="btn btn-outline-light rounded-pill px-4 mt-4 mt-lg-3">
+              Descubrir más &gt;
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- 🔸 Modal 3 -->
+<div class="modal fade" id="modalSec3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white rounded-4 position-relative modal-wide">
+
+       <button type="button" 
+        class="btn-close btn-close-white position-absolute top-0 end-0 m-2 m-md-3" 
+        data-bs-dismiss="modal" aria-label="Cerrar"
+        style="z-index: 1056;"></button>
+
+
+     <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+
+          <!-- Columna izquierda -->
+          <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+            <img src="Media/Img-decoración/img web 3.png" class="img-fluid rounded-3 mb-3" alt="Descuento en Gris">
+           <h3 class="fw-bold">Teorías de Gris</h3>
+            <p class="text-muted">Descubre los secretos ocultos</p>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="col-12 col-lg-7 px-4">
+            <div class="d-flex align-items-start mb-2">
+              <i class="bi bi-chat-dots px-2" style="font-size: 28px;"></i>
+              <div>
+                <span class="fw-bold">Foros</span><br>
+                <small class="text-muted">Publicado el 14 de Enero, 2023</small>
+              </div>
+            </div>
+            <hr class="border-light opacity-50">
+
+            <!-- Bloque 1 -->
+            <h4 class="fw-bold">El significado del viaje</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                Muchos jugadores han analizado Gris en busca de significados ocultos...
+              </p>
+
+              <div class="collapse" id="textoTeorias1">
+                <p>
+                  Algunos creen que representa las cinco etapas del duelo, con cada fase del juego reflejando una emoción específica: negación, ira, negociación, depresión y aceptación.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoTeorias1" 
+                role="button" aria-expanded="false" aria-controls="textoTeorias1"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                Muchos jugadores han analizado Gris en busca de significados ocultos.  
+                Algunos creen que representa las cinco etapas del duelo, con cada fase del juego reflejando una emoción específica: negación, ira, negociación, depresión y aceptación.
+              </p>
+            </div>
+
+            <!-- Bloque 2 -->
+            <h4 class="fw-bold mt-4">Simbolismo en los escenarios</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                Cada entorno del juego parece tener un mensaje oculto...
+              </p>
+
+              <div class="collapse" id="textoTeorias2">
+                <p>
+                  La ausencia de color al inicio sugiere la pérdida de esperanza, mientras que el regreso progresivo de los colores puede interpretarse como una metáfora de la recuperación emocional.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoTeorias2" 
+                role="button" aria-expanded="false" aria-controls="textoTeorias2"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                Cada entorno del juego parece tener un mensaje oculto.  
+                La ausencia de color al inicio sugiere la pérdida de esperanza, mientras que el regreso progresivo de los colores puede interpretarse como una metáfora de la recuperación emocional.
+              </p>
+            </div>
+
+            <!-- Botón acción -->
+            <a href="Error 404.html" target="_blank" 
+               class="btn btn-outline-light rounded-pill px-4 mt-4 mt-lg-3">
+              Leer más &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- 🔸 Modal 4 -->
+<div class="modal fade" id="modalSec4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white rounded-4 position-relative modal-wide">
+
+      <button type="button" 
+        class="btn-close btn-close-white position-absolute top-0 end-0 m-2 m-md-3" 
+        data-bs-dismiss="modal" aria-label="Cerrar"
+        style="z-index: 1056;"></button>
+
+
+       <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+
+          <!-- Columna izquierda -->
+          <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+            <img src="Media/Img-decoración/img web 2.png" class="img-fluid rounded-3 mb-3" alt="Descuento en Gris">
+             <h3 class="fw-bold">Neva en preventa</h3>
+            <p class="text-muted">Reserva ahora</p>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="col-12 col-lg-7 px-4">
+            <div class="d-flex align-items-start mb-2">
+              <i class="bi bi-megaphone me-2 px-2" style="font-size: 28px;"></i>
+              <div>
+                <span class="fw-bold">Noticias</span><br>
+                <small class="text-muted">Publicado el 22 de agosto, 2025</small>
+              </div>
+            </div>
+            <hr class="border-light opacity-50">
+
+            <!-- Bloque 1 -->
+            <h4 class="fw-bold">Un nuevo mundo por descubrir</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                Los creadores de Gris vuelven con Neva, una nueva aventura cargada de emoción y belleza visual...
+              </p>
+
+              <div class="collapse" id="textoNevaPreventa1">
+                <p>
+                  En este juego, los jugadores acompañarán a Alba en su viaje por un mundo misterioso y en peligro, repleto de criaturas impresionantes y entornos cautivadores.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoNevaPreventa1" 
+                role="button" aria-expanded="false" aria-controls="textoNevaPreventa1"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                Los creadores de Gris vuelven con Neva, una nueva aventura cargada de emoción y belleza visual.  
+                En este juego, los jugadores acompañarán a Alba en su viaje por un mundo misterioso y en peligro, repleto de criaturas impresionantes y entornos cautivadores.
+              </p>
+            </div>
+
+            <!-- Bloque 2 -->
+            <h4 class="fw-bold mt-4">Recompensas exclusivas</h4>
+            <div class="d-block d-lg-none">
+              <p>
+                La preventa de Neva ofrece recompensas únicas...
+              </p>
+
+              <div class="collapse" id="textoNevaPreventa2">
+                <p>
+                  Aquellos que reserven el juego podrán acceder a ilustraciones exclusivas, una banda sonora digital y contenido adicional dentro del juego.  
+                  Disponible en: Xbox, PlayStation, Switch y PC.
+                </p>
+              </div>
+
+              <a class="btn btn-link fw-bold text-white text-decoration-none p-0" 
+                data-bs-toggle="collapse" href="#textoNevaPreventa2" 
+                role="button" aria-expanded="false" aria-controls="textoNevaPreventa2"
+                onclick="this.textContent = this.textContent.includes('más') ? '< Ver menos >' : '< Ver más >'">
+                < Ver más >
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block small">
+              <p>
+                La preventa de Neva ofrece recompensas únicas.  
+                Aquellos que reserven el juego podrán acceder a ilustraciones exclusivas, una banda sonora digital y contenido adicional dentro del juego.  
+                Disponible en: Xbox, PlayStation, Switch y PC.
+              </p>
+            </div>
+
+            <!-- Botón acción -->
+            <a href="https://store.steampowered.com/app/2420660/Neva/" target="_blank" 
+               class="btn btn-outline-light rounded-pill px-4 mt-4 mt-lg-3">
+              Reservar ahora &gt;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+<!-- ------------------------seccion newletter---------- -->
+
+<section class="newsletter-section text-white py-5" id="signup">
+  <div class="container">
+    <div class="p-5 my-5 rounded-4 shadow-lg bg-dark opacity-95  text-white p-3">
+      <div class="row align-items-center g-3 flex-column flex-lg-row">
+
+        <!-- Columna izquierda -->
+        <div class="col-lg-6 text-start px-4">
+          <h2 class="fw-bold display-5">Mantente al Día con<br>Neva y Gris</h2>
+          <h3 class="fw-light fs-4">Recibe contenido exclusivo.</h3>
+          <p class="mt-3 fw-semibold">
+            Sé el primero en enterarte sobre nuevo merchandising, lanzamientos de juegos, descuentos y más.
+          </p>
+
+          <h5 class="mt-4 mb-2 fw-bold">Tus Preferencias:</h5>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="pref1">
+            <label class="form-check-label" for="pref1">
+              Quiero recibir noticias de merchandising.
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="pref2">
+            <label class="form-check-label" for="pref2">
+              Quiero recibir noticias sobre los juegos.
+            </label>
+          </div>
+          <small class="text-white-50">
+            Selecciona una o ambas opciones según tus intereses. 
+            Así recibirás solo lo que realmente te gusta.
+          </small>
+        </div>
+
+        <!-- Columna derecha -->
+<div class="col-lg-6">
+  <div class="text-center d-none d-lg-block">
+    <img src="Media/Img-decoración/Deco-news-letter.png"
+         alt="Decoración Newsletter"
+         class="img-fluid mb-4 newsletter-img w-75">
+  </div>
+
+  <form class="row g-3 text-start px-4" id="newsletterForm">
+    <div class="col-md-6">
+      <label for="nombre" class="form-label fw-bold">Nombre:</label>
+      <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Mi nombre es">
+    </div>
+    <div class="col-md-6">
+      <label for="correo" class="form-label fw-bold">Correo:</label>
+      <input type="email" class="form-control rounded-pill" id="correo" placeholder="Correo@email.com">
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="pref3">
+        <label class="form-check-label" for="pref3">
+          Acepto el uso de cookies y el envío de información comercial y/o merchandising.
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-outline-light rounded-pill px-4 fw-bold">
+        Suscribirme &nbsp; &gt;
+      </button>
+    </div>
+  </form>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<br>
+<br>
+
+<!-------------------------------- Footer -------------------------------------->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column footer-logo-column d-flex justify-content-center">
+        <div class="footer-logo">
+          <div class="logo-container w-100">
+            <img src="Media/Logos/logo (2).png" alt="Nomada Studio Logo">
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-column ">
+        <h3>Explora</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Juegos.html">Juegos</a></li>
+          <li><a href="Tienda.html">Tienda</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Contáctanos</h3>
+        <ul>
+          <li> <strong>Tel:</strong>
+            <br>
+            <a href="#">+57 319 2462042</a></li>
+          <li> <strong>E-mails:</strong>
+            <br><a href="#">shop@nomada.studio</a></li>
+          <li><a href="#">support@nomada.studio</a></li>
+          <li><a href="#">info@nomada.studio</a></li>
+          <li><a href="#">contact@nomadastudio.com</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Síguenos en redes</h3>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/nomadastudiobcn/?hl=es" title="Instagram"><img src="Media/Iconos/Icono-SM(3).png"></a>
+          <a href="https://www.tiktok.com/@nomada.studio" title="TikTok"><img src="Media/Iconos/Icono-SM(1).png"></a>
+          <a href="https://es-es.facebook.com/nomadastudiobcn/photos/" title="Facebook"><img src="Media/Iconos/Icono-SM(2).png"></a>
+          <a href="https://x.com/nomadastudiobcn" title="Twitter"><img src="Media/Iconos/Icono-SM(4).png"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom mb-4"> 
+      <div><img src="Media/Logos/Nomada Studio ©2018.png" alt=""></div>
+      <div class="footer-info">
+        <a href="https://olimar2.com/wp-content/uploads/2021/04/POLI%CC%81TICA-DE-COOKIES.docx.pdf" title="TikTok">Cookie Policy</a>
+        <a href="Error 404.html">Disclaimer</a>
+        <a href="https://drive.google.com/file/d/1OXlboORFDaFhp3M9vUWnl03WnMDWupVP/view?usp=sharing">Política de Privacidad</a>
+      </div>
+    </div>
+
+
+   <div class="footer-info d-flex flex-column align-items-center text-center mt-4">
+  <p>
+    Proyecto financiado por el Ministerio de Cultura y Deporte "Ayudas para la promoción del sector del videojuego, 
+    del podcast y otras formas de creación digital", en el marco del Plan de Recuperación, Transformación y Resiliencia
+  </p>
+
+  <div class="footer-logos d-flex justify-content-center gap-3">
+    <img src="Media/Logos/Logo-gobierno(1).png">
+    <img src="Media/Logos/Logo-gobierno(2).png">
+    <img src="Media/Logos/Logo-gobierno(3).png">
+  </div>
+</div>
+  </footer>
+
+
+
+
+  <!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top-btn" title="Volver arriba">
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" width="24" height="24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7 7 7M12 3v18" />
+    </svg>
+  </span>
+</button>
+
+<!-- JS mios Nicole Zapata -->
+<script src="JS/Interacion de form contactos.js"></script>
+<script src="JS/Interacion de form newsleter.js"></script>
+<script src="JS/Video-pequeño.js"></script>
+<script src="JS/Botones de filtraje.js"></script>
+<script src="JS/Boton-scroll.js"></script>
+<script src="JS/Menus-interaciones.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>

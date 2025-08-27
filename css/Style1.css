@@ -1,0 +1,1182 @@
+:root {
+  --font-main: lexend, sans-serif;
+  --color-primary: #e30613;
+  --color-secondary: #e30613 ;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #ccc;
+  --radius-pill: 50px;
+  --radius-lg: 20px;
+  --transition: all 0.3s ease;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+}
+
+/* ==== ESTILOS GENERALES ==== */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+body, html {
+  font-family: var(--font-main);
+  height: auto;
+  overflow-x: hidden; /* opcional: evita scroll horizontal */
+  overflow-y: auto;   /* permite scroll vertical */
+  font-family: sans-serif;
+}
+
+
+.btn-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  background-color: white;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  font-weight: 650;
+  font-size: var(--font-size-xl); /* demasiado grande para cards */
+  border-radius: 3rem;
+  padding: 0.6rem 2rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-red:hover {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+
+
+
+
+/* ==== Botón Rojo Versión Pequeña Para Cards ==== */
+.btn-red.small {
+  font-size: var(--font-size-base);
+  padding: 0.3rem 1rem;
+  border-width: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/*-------------------------INICIO DE NEWSLETTER------------------------------*/
+
+.newsletter-section {
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 4rem 2.5rem;
+  overflow: hidden;
+  position: relative;
+  font-family: var(--font-main);
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.newsletter-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.newsletter-section h3 {
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+
+.newsletter-section small {
+  font-size: 0.75rem;
+  color: var(--color-gray);
+}
+
+/* Preferencias (checkboxes) */
+.newsletter-section .form-check-label {
+  font-weight: 500;
+}
+
+.newsletter-section .form-check-input {
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+/* Inputs */
+.newsletter-section input.form-control {
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+    background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.newsletter-section input.form-control::placeholder {
+  color: #aaa;
+}
+
+.newsletter-section .form-label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+/* Botón de envío */
+.newsletter-section button[type="submit"] {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.6rem 1.5rem;
+  text-transform: none;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-section button[type="submit"]:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-white);
+}
+
+.newsletter-section .newsletter-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.newsletter-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  height: auto;
+}
+
+.newsletter-section {
+  background-attachment: fixed;ckground-color: rgba(0, 0, 0, 0.9);
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  border-radius: var(--radius-lg);
+  max-width: 1200px;
+  width: 100%;
+}
+
+/*-------------------------FIN DE NEWSLETTER------------------------------*/
+
+
+/*-------------------------BACK TO TOP BUTTON------------------------------*/
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color:#A40411;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  z-index: 1000;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top-btn:hover {
+  background-color:#d12e3f ;
+  transform: scale(1.1);
+}
+
+.back-to-top-btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top-btn svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.store-icon {
+    width: 100%;
+    max-width: 60px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+/*-------------------------FIN BACK TO TOP BUTTON---------------------------*/
+
+/*------------------------------INICIO DE FOOTER ---------------------------*/
+.footer {
+  background-color: var(--color-black);
+  color: white;
+  padding: 4rem 2rem 2rem;
+  width: 100% !important;
+}
+
+.footer-content,
+.footer-bottom {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #333;
+}
+
+.footer-logo-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 350px;
+}
+
+.logo-container {
+  width: 100%;
+  height: auto;
+/*  background-color: red;*/
+}
+
+.logo-container img {
+  width: 90%;
+  height: auto;
+/*  max-width: 200px;*/
+  object-fit: contain;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  opacity: 0.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-social img {
+ width: 65%;}
+
+
+.footer-social a:hover {
+  background-color: var(--color-primary);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-info p {
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.footer-info a {
+  font-size: var(--font-size-base);
+  line-height: 1.2;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+}
+
+.footer-logos img {
+  width: 100%;
+/*  background-color: royalblue;*/
+  height: auto;
+/*  max-width: 80px;*/
+  object-fit: contain;
+}
+
+/*------------------------------FIN DE FOOTER ---------------------------*/
+
+/*----------------------------FIN DE CONTENIDO GENERAL-------------------*/
+
+
+
+
+
+/* ==== LOGO GENERAL ==== */
+.logo {
+  padding: 5px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 110px;
+  max-height: 35px;
+}
+
+.logo-placeholder {
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+}
+
+/* ==== NAVEGACIÓN PRINCIPAL ==== */
+.menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu > a {
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.menu a.activo {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.5px;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==== Grupo Del Menú Principal ==== */
+.menu-container a:hover{
+  color: red !important;
+}
+
+.menu-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+
+.main-header.transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* más alto que el video */
+  background: transparent;
+}
+
+#grupo-menu1 {
+  display: flex;
+  flex-grow: 0.5;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0.80);
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ==== BOTÓN DE IDIOMAS ==== */
+.boton-idiomas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.boton-idiomas a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.80);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* ==== MENÚS DESPLEGABLES ==== */
+.menu-desplegable, .menu-idiomas {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.menu-desplegable {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.menu-idiomas {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.menu-desplegable.visible,
+.menu-idiomas.visible {
+  transform: translateX(0);
+}
+
+/* ==== BOTÓN SALIR ==== */
+.boton-salir {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  font-size: var(--font-size-lg);
+}
+
+.menu-desplegable .boton-salir {
+  right: 20px;
+}
+
+.menu-idiomas .boton-salir {
+  left: 20px;
+  right: auto;
+}
+
+/* ==== MENÚ DESPLEGABLE CONTENIDO ==== */
+.menu-desplegable .logo {
+  width: 200px;
+  height: 60px;
+  margin-top: 3.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-desplegable .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 180px;
+  max-height: 55px;
+}
+
+.menu-desplegable ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.menu-desplegable a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.menu-desplegable a:hover,
+.menu-idiomas a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-desplegable ul li a:hover,
+.menu-idiomas ul li a:hover {
+  color: red;
+}
+
+
+/* ==== MENÚ IDIOMAS CONTENIDO ==== */
+.menu-idiomas ul {
+  margin-top: 5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu-idiomas h1 {
+  padding: 0.75rem 1rem;
+  font-weight: 200;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.menu-idiomas a {
+  padding: 0.75rem 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* ==== OVERLAY ==== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.overlay.visible {
+  display: block;
+}
+
+/* ==== HAMBURGUESA ==== */
+.hamburguesa {
+  display: none;
+}
+
+.hamburguesa p {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.80);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0;
+}
+
+
+/*----------------------INICIO DE VIDEO HERO---------------------------*/
+
+.hero-video {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video video {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+/*-------------------------INICIO DE MODAL CONTACTOS------------------------------*/
+
+body.modal-open {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+}
+
+.modal-dialog {
+  max-height: 100vh;
+}
+
+
+.modal-content {
+  border-radius: var(--radius-lg);
+ max-height: 100vh;
+  overflow-y: auto;
+}
+
+.modal-body {
+  min-height: 550px;
+}
+
+.left-panel {
+  width: 40%;
+  height: auto;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-left {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right-panel {
+  width: 65%;
+  background-color: #111;
+  color: white;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: var(--font-size-lg);
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+/*-------------------------FIN DE MODAL CONTACTOS-----------------------------*/
+
+/*----------------------INICIO DE SECCION COMUNIDAD---------------------------*/
+
+/*======BOTON DE FILTRAJE======*/
+.grupo2 {
+  display: flex;
+  border: 2px solid #000;
+  border-radius: 100px;
+  overflow: hidden; /* oculta esquinas redondeadas internas */
+}
+
+/* Estilo base del botón */
+.btn-filter {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: 600;
+  padding: 10px 24px;
+  font-size: var(--font-size-base);
+  transition: var(--transition)-in-out;
+  border: none;
+  border-radius: 0;
+}
+
+/* Línea divisoria entre botones excepto el primero */
+.btn-filter + .btn-filter {
+  border-left: 1px solid #000;
+}
+
+/* Hover */
+.btn-filter:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* Botón activo */
+.btn-filter.active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+/*======================*/
+
+
+/* Nuevo wrapper para no tocar Bootstrap */
+.img-frame {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden; /* recorta bordes */
+}
+
+/* Imagen: dejar que Bootstrap la maneje */
+.img-frame img {
+  display: block;
+  width: 100%;
+  height: auto; /* importante: respeta proporción */
+}
+
+/* Overlay rosa */
+.img-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(254,161,168,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .25s ease;
+  pointer-events: none;
+  z-index: 2;
+
+  /* Sombra interior para difuminar */
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.35);
+
+  /* Difuminado total en los bordes */
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+
+  /* Compatibilidad Firefox */
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+/* Mostrar overlay al pasar el ratón */
+
+/* Botón dentro del overlay */
+.img-overlay button {
+  pointer-events: auto;
+  background: rgba(255,255,255,.15);
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  padding: .55rem 1.15rem;
+  border-radius: 999px;
+  backdrop-filter: blur(2px);
+  transition: background .25s ease;
+}
+
+.img-overlay button:hover {
+  background: rgba(255,255,255,.25);
+}
+
+
+.card-body h5 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+  }
+
+.card-body p {
+    font-size: var(--font-size-sm);
+    margin-bottom: 0.5rem;
+  }
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--color-black);
+  }
+.btn-group .btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    margin-right: 0.25rem;
+  }
+
+.img-frame:hover .img-overlay {
+  opacity: 1;
+}
+
+
+.modal-body {
+  display: flex;
+  align-items: center;   /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  flex-direction: column; /* Mantiene el orden en columna */
+}
+
+
+.modal.show .modal-dialog {
+  display: flex;
+  align-items: center;   /* centra vertical */
+  min-height: 100vh;     /* usa todo el viewport como referencia */
+}
+
+
+/*-----------------------------PAGINA DE JUEGOS--------------------------------*/
+
+/*--------------------------SECCION DE GRIS--------------------------------*/
+
+.platform-link {
+  width: 65px;               /* 🔽 círculo más pequeño */
+  height: 65px;
+  border: 2px solid #000;
+  border-radius: 50%;        /* círculo perfecto */
+  background: #fff;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+  font-size: 0.65rem;        /* texto aún más pequeño */
+  padding: 6px;
+  margin: 0 auto;            /* centrado horizontal */
+}
+
+.platform-link:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.platform-icon {
+   max-height: 70px;          /* ícono más pequeño */
+  transition: all 0.3s ease;
+}
+
+.platform-link:hover .platform-icon {
+  filter: invert(1);         /* invertir colores al hover */
+}
+
+.download-text {
+  font-size: 0.6rem;         /* texto pequeñito */
+  font-weight: 700;
+}
+
+/* ---------- AJUSTE DE GRID ICONOS (menos espacio entre ellos) ---------- */
+.platform-grid .row {
+  --bs-gutter-x: 0.25rem;  /* menos separación horizontal */
+  --bs-gutter-y: 0.5rem;   /* menos separación vertical */
+}
+
+/* ---------- TEXTO Y FICHA ---------- */
+.game-text {
+  text-align: center; /* centra títulos y botones */
+}
+
+.platform-grid-desktop .row {
+  display: none;
+}
+.game-text .ficha {
+  text-align: left;   /* texto de la ficha alineado a la izquierda */
+  max-width: 95%;     /* un poquito más ancho */
+  margin: 0 auto;     /* centrada en el bloque */
+  font-size: 1rem;    /* más grande que el body normal */
+  line-height: 1.6;   /* más cómodo de leer */
+}
+
+/* Estilos del modal Gris */
+#carouselGris .carousel-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+/* En móviles: formato vertical + zoom centrado */
+@media (max-width: 1024px) {
+  #carouselGris .carousel-inner img {
+    height: 87vh;           /* ocupa el 80% de la pantalla en alto */
+    object-fit: cover;      /* zoom automático manteniendo proporción */
+    object-position: center;/* recorte centrado */
+    border-radius: 0.8rem;
+  }
+}
+
+
+/* Estilos del modal Neva */
+#carouselNeva .carousel-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+/* En móviles: formato vertical + zoom centrado */
+@media (max-width: 1024px) {
+  #carouselNeva .carousel-inner img {
+    height: 85vh;           /* ocupa casi toda la altura de la pantalla */
+    object-fit: cover;      /* recorte para que siempre llene */
+    object-position: center;/* centrado en el recorte */
+    border-radius: 0.8rem;
+  }
+}
+
+
+
+
+/*--------------------------FIN SECCION DE GRIS----------------------------*/
+
+
+/*-----------------------------FIN PAGINA DE JUEGOS--------------------------------*/
+
+
+
+/*-----------------------------INICIO PAGINA DE TIENDA--------------------------------*/
+
+
+/*--------------------------INICIO SECCION DE PRODUCTOS----------------------------*/
+
+/* ----- TARJETAS SECUNDARIAS ----- */
+.tarjeta-secundaria {
+  position: relative; /* necesario para colocar el icono */
+}
+
+.tarjeta-secundaria .card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover universal (funciona en desktop y móvil/touch al hacer tap) */
+.tarjeta-secundaria .card:hover,
+.tarjeta-secundaria .card:active {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen con efecto sutil */
+.tarjeta-secundaria .card img {
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-secundaria .card:hover img,
+.tarjeta-secundaria .card:active img {
+  transform: scale(1.05);
+}
+
+/* Fondo del cuerpo más oscuro en hover */
+.tarjeta-secundaria .card-body {
+  transition: background-color 0.3s ease;
+}
+
+.tarjeta-secundaria .card:hover .card-body,
+.tarjeta-secundaria .card:active .card-body {
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+/* Contenedor para la imagen */
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto escala en hover */
+.card-img-wrapper img {
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Icono rojo flotante */
+.icono-flotante {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #d62828;
+  color: #fff;
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  opacity: 0;              /* oculto al inicio */
+  transform: scale(0.8);   /* ligeramente pequeño */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Mostrar icono SOLO en hover */
+.card:hover .icono-flotante {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*-----------------------------------------*/
+/* Ancho del modal (Productos 1–7) */
+#productoModal1 .modal-dialog,
+#productoModal2 .modal-dialog,
+#productoModal3 .modal-dialog,
+#productoModal4 .modal-dialog,
+#productoModal5 .modal-dialog,
+#productoModal6 .modal-dialog,
+#productoModal7 .modal-dialog {
+  --bs-modal-width: min(900px, 92vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive: en móvil, más ancho y centrado */
+@media (max-width: 768px) {
+  #productoModal1 .modal-dialog,
+  #productoModal2 .modal-dialog,
+  #productoModal3 .modal-dialog,
+  #productoModal4 .modal-dialog,
+  #productoModal5 .modal-dialog,
+  #productoModal6 .modal-dialog,
+  #productoModal7 .modal-dialog {
+    --bs-modal-width: 92vw;
+    margin: 1rem auto;
+  }
+}
+
+/* Carrusel dentro del modal (Productos 1–7) */
+#productoModal1 .carousel-inner img,
+#productoModal2 .carousel-inner img,
+#productoModal3 .carousel-inner img,
+#productoModal4 .carousel-inner img,
+#productoModal5 .carousel-inner img,
+#productoModal6 .carousel-inner img,
+#productoModal7 .carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+/* En pantallas grandes: más alto */
+@media (min-width: 992px) {
+  #productoModal1 .carousel-inner img,
+  #productoModal2 .carousel-inner img,
+  #productoModal3 .carousel-inner img,
+  #productoModal4 .carousel-inner img,
+  #productoModal5 .carousel-inner img,
+  #productoModal6 .carousel-inner img,
+  #productoModal7 .carousel-inner img {
+    height: 500px;
+  }
+}
+
+
+
+
+
+/*--------------------------FIN SECCION DE PRODUCTOS----------------------------*/

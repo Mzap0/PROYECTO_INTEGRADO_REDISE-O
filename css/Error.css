@@ -1,0 +1,100 @@
+/* ==== VARIABLES GLOBALES ==== */
+:root {
+  --color-fondo: #ffffff;
+  --color-iconos: #A40411;
+  --color-principal: #d12e3f;
+  --color-boton-hover:#EA2C2E ;
+  --color-secundario: #111111;
+  --color-texto: #111111;
+  --color-rosa: #ff6b9d;
+  --fuente-principal: 'Lexend', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.emoji {
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ff2c2c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .emoji {
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .back-button {
+        padding: 8px 16px;
+    }
+}
